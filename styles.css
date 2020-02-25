@@ -20,12 +20,14 @@ html {
 }
 
 .page-content {
-    max-width: 600px;
+    width: 100%;
+    max-width: 700px;
     overflow-x: hidden;
-    margin: auto;
+    margin: 0 auto;
+    background-color: #152D20;
 }
 
-h1 {
+/* h1 {
     font-family: 'Fredericka the Great', serif;
     color: white;
     font-size: 120px;
@@ -39,18 +41,129 @@ h2 {
     font-size: 51px;
 }
 
-h2 {
+h3 {
     font-family: 'Fredericka the Great', serif;
-    color: white;
-    font-size: 51px;
+    color: #152D20;
+    font-size: 49px;
 }
+
+h4 {
+    font-family: 'Fredericka the Great', serif;
+    color: #152D20;
+    font-size: 35px;
+}
+
+a {
+    
+} */
+
+
+
 /* font-family: 'Cormorant Garamond', ; */
+
+/* p {
+    color: white;
+} */
+
+.button {
+    background-color: #152D20;
+    color: white;
+    font-family: 'Cormorant Garamond', ;
+    font-size: 18px;
+    text-align: center;
+    line-height: 29px;
+    border: none;
+    /* MAKE IT SEMIBOLD! */
+}
+
+
+/* -------- */
+
+.site-header {
+    width: 100%;
+}
+
 .site-header {
     position: absolute;
+}
+
+.section-hero {
+    background-color: #152D20;
 }
 
 .section-hero__image {
     object-fit: cover;
     height: 480px;
     width: 100%;
+}
+
+.section-featured {
+    padding: 30px 15px;
+}
+
+.section-featured__image {
+    width: 100%;
+}
+
+
+.section-gallery {
+    padding: 30px 15px;
+    background-color: #C3D3CB;
+}
+
+.section-gallery__image {
+    width: 100%;
+}
+
+/* .section-gallery__image--hidden {
+    display: none;
+} */
+
+.section-links {
+    /* background-color: #152D20; */
+}
+
+.section-articles {
+}
+
+.section-articles__description {
+    color: black;
+}
+
+.section-articles__article {
+    background: white;
+}
+
+.section-articles__image {
+    width: 100%;
+    min-height: 200px;
+    /* max-height: ; */
+    object-fit: cover;
+}
+
+/* ----- */
+.section-contact {
+    padding: 30px 15px;
+}
+
+.section-contact__heading {
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.section-contact__input {
+    width: 100%;
+}
+
+.section-contact__button {
+    width: 100%;
+}
+
+
+
+
+.site-footer {
+    background-color: black;
+    text-align: center;
 }
