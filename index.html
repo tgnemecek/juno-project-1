@@ -22,7 +22,10 @@
         <main>
         <section class="section-hero">
             <img class="section-hero__image" src="assets/image-1.jpg" alt="Tiger">
-            <h1 class="section-hero__heading">ANIMAL REFUGE</h1>
+            <div class="section-hero__heading">
+            <h1>ANIMAL</h1><h1>REFUGE</h1>
+            </div>
+
             <nav class="section-hero__nav">
                 <a class="a section-hero__link" href="/">
                     <i class="fab fa-instagram"></i>
@@ -38,11 +41,11 @@
                 </a>
             </nav>
         </section>
-        <section class="section-featured">
+        <section class="section-featured clearfix">
             <img class="section-featured__image" src="assets/image-6.jpg" alt="Cat">
-            <div>
+            <div class="section-featured__information">
                 <h2 class="section-featured__heading">SUZIE'S STORY</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p class="section-featured__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis
@@ -67,81 +70,82 @@
             </ul>
         </section>
         <section class="section-links">
-            <nav>
+            <nav class="section-links__nav clearfix">
                 <a class="section-links__link" href="">
-                    ANIMAL SPOTLIGHT
+                    <i class="fas fa-paw section-links__icon"></i>
+                    <p class="section-links__text">
+                        ANIMAL SPOTLIGHT
+                    </p>
                 </a>
                 <a class="section-links__link" href="">
-                    EVENTS
+                    <i class="fas fa-calendar-check section-links__icon"></i>
+                    <p class="section-links__text">
+                        EVENTS
+                    </p>
                 </a>
                 <a class="section-links__link" href="">
-                    MERCH
+                    <i class="fas fa-shopping-bag section-links__icon"></i>
+                    <p class="section-links__text">
+                        MERCH
+                    </p>
                 </a>
             </nav>
         </section>
         <section class="section-articles">
             <ul>
-                <li>
+                <li class="clearfix">
+                    <img class="section-articles__image" src="assets/image-7.jpg" alt="Zebras">
                     <div class="section-articles__article">
-                        <h4 class="h4">FASCINATING FACTS ABOUT ZEBRAS</h4>
+                        <h4 class="section-articles__heading">FASCINATING FACTS ABOUT ZEBRAS</h4>
                         <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                             et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
-                            Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button class="button button--secondary">READ MORE</button>
+                            commodo consequat.</p>
+                        <button class="button button--secondary section-articles__button">READ MORE</button>
                     </div>
-                    <img class="section-articles__image" src="assets/image-2.jpg" alt="Zebras">
                 </li>
-                <li>
-                    <div class="section-articles__article">
-                        <h4 class="h4">THE BOND BETWEEN ANIMALS AND HUMANS</h4>
+                <li class="clearfix">
+                    <img class="section-articles__image section-articles__image--inverted" src="assets/image-2.jpg" alt="Cat">
+                    <div class="section-articles__article section-articles__article--inverted">
+                        <h4 class="section-articles__heading">THE BOND BETWEEN ANIMALS AND HUMANS</h4>
                         <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                             et dolore
                             magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo
-                            consequat.
-                            Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button class="button button--secondary">READ MORE</button>
+                            consequat.</p>
+                        <button class="button button--secondary section-articles__button">READ MORE</button>
                     </div>
-                    <img class="section-articles__image" src="assets/image-7.jpg" alt="Zebras">
                 </li>
             </ul>
         </section>
-        <section class="section-contact">
-            <div>
-                <nav>
-                    <a class="a" href="">HOME</a>
-                    <a class="a" href="">BLOG</a>
-                    <a class="a" href="">GALLERY</a>
-                    <a class="a" href="">CONTACT</a>
+        <section class="section-contact clearfix">
+                <nav class="section-contact__nav">
+                    <a class="section-contact__link" href="">HOME</a>
+                    <a class="section-contact__link" href="">ABOUT</a>
+                    <a class="section-contact__link" href="">BLOG</a>
+                    <a class="section-contact__link" href="">CONTACT</a>
                 </nav>
-                <div>
-                    <h5 class="h5">STAY UPDATED</h5>
-                    <p>Subscribe to our newsletter to stay updated</p>
+                <div class="section-contact__newsletter">
+                    <h5 class="section-contact__heading">STAY UPDATED</h5>
+                    <p class="section-contact__p">Subscribe to our newsletter to stay updated</p>
                     <input class="section-contact__input" type="text" placeholder="email address" />
                     <button class="button section-contact__button">SUBSCRIBE</button>
                 </div>
-                <div>
-                    <h5 class="h5">CONTACT</h5>
-                    <div>
-                        <p>info@email.com | 123 - 456 - 7890</p>
-                    </div>
-                    <div>
-                        <p>123 some road, Toronto, ON</p>
-                    </div>
-                    <div>
-                        <p>A5A 5A5, Canada</p>
+                <div class="section-contact__contact">
+                    <h5 class="section-contact__heading">CONTACT</h5>
+                    <div class="section-contact__p">
+                        <div>
+                            <p>info@email.com | 123 - 456 - 7890</p>
+                        </div>
+                        <div>
+                            <p>123 some road, Toronto, ON</p>
+                        </div>
+                        <div>
+                            <p>A5A 5A5, Canada</p>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         </main>
         <footer class="site-footer">
