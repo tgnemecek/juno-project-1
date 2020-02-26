@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b08e9d32e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Juno Project 1</title>
 </head>
@@ -12,27 +13,35 @@
     <div class="page-content">
         <header class="site-header">
             <nav>
-                <a href="">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="">BLOG</a>
-                <a href="">CONTACT</a>
+                <a class="a" href="">HOME</a>
+                <a class="a" href="">ABOUT</a>
+                <a class="a" href="">BLOG</a>
+                <a class="a" href="">CONTACT</a>
             </nav>
         </header>
         <main>
         <section class="section-hero">
             <img class="section-hero__image" src="assets/image-1.jpg" alt="Tiger">
-            <h1>ANIMAL REFUGE</h1>
-            <nav>
-                <a href="">A</a>
-                <a href="">A</a>
-                <a href="">A</a>
-                <a href="">A</a>
+            <h1 class="section-hero__heading">ANIMAL REFUGE</h1>
+            <nav class="section-hero__nav">
+                <a class="a section-hero__link" href="/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="a section-hero__link" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="a section-hero__link" href="">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </a>
+                <a class="a section-hero__link" href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </nav>
         </section>
         <section class="section-featured">
             <img class="section-featured__image" src="assets/image-6.jpg" alt="Cat">
             <div>
-                <h2>SUZIE'S STORY</h2>
+                <h2 class="section-featured__heading">SUZIE'S STORY</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -40,35 +49,41 @@
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                     sint
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button class="button">READ MORE</button>
+                <button class="button section-featured__button">READ MORE</button>
             </div>
         </section>
-        <section class="section-gallery">
-            <h3>SOME OF OUR FRIENDS</h3>
+        <section class="section-gallery clearfix">
+            <h3 class="section-gallery__heading">SOME OF OUR FRIENDS</h3>
             <ul>
                 <li>
                     <img class="section-gallery__image" src="assets/image-5.jpg" alt="Chameleon">
                 </li>
                 <li>
-                    <img class="section-gallery__image" src="assets/image-4.jpg" alt="Sheep">
+                    <img class="section-gallery__image section-gallery__image--right" src="assets/image-4.jpg" alt="Sheep">
                 </li>
                 <li>
-                    <img class="section-gallery__image" src="assets/image-3.jpg" alt="Parrot">
+                    <img class="section-gallery__image section-gallery__image--last" src="assets/image-3.jpg" alt="Parrot">
                 </li>
             </ul>
         </section>
         <section class="section-links">
             <nav>
-                <a href="">ANIMAL SPOTLIGHT</a>
-                <a href="">EVENTS</a>
-                <a href="">MERCH</a>
+                <a class="section-links__link" href="">
+                    ANIMAL SPOTLIGHT
+                </a>
+                <a class="section-links__link" href="">
+                    EVENTS
+                </a>
+                <a class="section-links__link" href="">
+                    MERCH
+                </a>
             </nav>
         </section>
         <section class="section-articles">
             <ul>
                 <li>
                     <div class="section-articles__article">
-                        <h4>FASCINATING FACTS ABOUT ZEBRAS</h4>
+                        <h4 class="h4">FASCINATING FACTS ABOUT ZEBRAS</h4>
                         <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                             et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -77,13 +92,13 @@
                             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint
                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button>READ MORE</button>
+                        <button class="button button--secondary">READ MORE</button>
                     </div>
                     <img class="section-articles__image" src="assets/image-2.jpg" alt="Zebras">
                 </li>
                 <li>
                     <div class="section-articles__article">
-                        <h4>THE BOND BETWEEN ANIMALS AND HUMANS</h4>
+                        <h4 class="h4">THE BOND BETWEEN ANIMALS AND HUMANS</h4>
                         <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                             et dolore
                             magna
@@ -94,28 +109,28 @@
                             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint
                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button class="button">READ MORE</button>
+                        <button class="button button--secondary">READ MORE</button>
                     </div>
-                    <img class="section-articles__image" src="assets/image-2.jpg" alt="Zebras">
+                    <img class="section-articles__image" src="assets/image-7.jpg" alt="Zebras">
                 </li>
             </ul>
         </section>
         <section class="section-contact">
             <div>
                 <nav>
-                    <a href="">HOME</a>
-                    <a href="">BLOG</a>
-                    <a href="">GALLERY</a>
-                    <a href="">CONTACT</a>
+                    <a class="a" href="">HOME</a>
+                    <a class="a" href="">BLOG</a>
+                    <a class="a" href="">GALLERY</a>
+                    <a class="a" href="">CONTACT</a>
                 </nav>
                 <div>
-                    <h4 class="section-contact__heading">STAY UPDATED</h4>
+                    <h5 class="h5">STAY UPDATED</h5>
                     <p>Subscribe to our newsletter to stay updated</p>
                     <input class="section-contact__input" type="text" placeholder="email address" />
                     <button class="button section-contact__button">SUBSCRIBE</button>
                 </div>
                 <div>
-                    <h4 class="section-contact__heading">CONTACT</h4>
+                    <h5 class="h5">CONTACT</h5>
                     <div>
                         <p>info@email.com | 123 - 456 - 7890</p>
                     </div>

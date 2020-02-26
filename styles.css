@@ -6,17 +6,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-
 /* ----------------------- */
 /* Colors:
 -light-green: #C3D3CB / 195, 211, 203
 -dark-green: #152D20 / 21, 45, 32 */
 
-
-
-
 html {
     font-size: 125%;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
 }
 
 .page-content {
@@ -26,54 +24,64 @@ html {
     margin: 0 auto;
     background-color: #152D20;
 }
-
-/* h1 {
+/* 
+.h1 {
     font-family: 'Fredericka the Great', serif;
     color: white;
-    font-size: 120px;
-    line-height: 117px;
-    text-align: right;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
-h2 {
+.h2 {
     font-family: 'Fredericka the Great', serif;
     color: white;
     font-size: 51px;
 }
 
-h3 {
+.h3 {
     font-family: 'Fredericka the Great', serif;
     color: #152D20;
     font-size: 49px;
 }
 
-h4 {
+.h4 {
     font-family: 'Fredericka the Great', serif;
     color: #152D20;
     font-size: 35px;
 }
 
-a {
-    
-} */
-
-
-
-/* font-family: 'Cormorant Garamond', ; */
-
-/* p {
+.h5 {
+    font-family: 'Cormorant Garamond', serif;
     color: white;
+    text-align: center;
+}
+
+.a {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    text-decoration: none;
 } */
 
 .button {
-    background-color: #152D20;
-    color: white;
-    font-family: 'Cormorant Garamond', ;
+    background-color: white;
+    color: #152D20;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     text-align: center;
     line-height: 29px;
     border: none;
+    padding: 5px 15px;
     /* MAKE IT SEMIBOLD! */
+}
+
+.button--secondary {
+    background-color: #152D20;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 29px;
+    border: none;
 }
 
 
@@ -81,28 +89,71 @@ a {
 
 .site-header {
     width: 100%;
+    text-align: center;
+    /* margin: 25px; */
 }
 
 .site-header {
     position: absolute;
+    z-index: 1;
 }
 
 .section-hero {
     background-color: #152D20;
+    position: relative;
 }
 
+.section-hero__heading {
+    font-family: 'Fredericka the Great', serif;
+    font-size: 1.1rem;
+    width: 120px;
+    margin: 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .section-hero__image {
     object-fit: cover;
     height: 480px;
     width: 100%;
 }
 
+.section-hero__nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+}
+
+.section-hero__link {
+    display: block;
+    text-align: center;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+}
+
 .section-featured {
     padding: 30px 15px;
+    color: white;
 }
 
 .section-featured__image {
     width: 100%;
+    margin-bottom: 50px;
+}
+
+.section-featured__heading {
+    font-family: 'Fredericka the Great', serif;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.section-featured__button {
+    display: block;
+    margin: 25px auto 0 auto;
 }
 
 
@@ -111,16 +162,35 @@ a {
     background-color: #C3D3CB;
 }
 
-.section-gallery__image {
-    width: 100%;
+.section-gallery__heading {
+    font-family: 'Fredericka the Great', serif;
+    color: #152D20;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-/* .section-gallery__image--hidden {
-    display: none;
-} */
+.section-gallery__image {
+    max-width: 45%;
+    float: left;
+}
 
+.section-gallery__image--right {
+    float: right;
+}
+
+/* MOBILE! */
+.section-gallery__image--last {
+    display: none;
+}
 .section-links {
-    /* background-color: #152D20; */
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.section-links__link {
+    color: white;
+    text-decoration: none;
 }
 
 .section-articles {
@@ -144,13 +214,14 @@ a {
 /* ----- */
 .section-contact {
     padding: 30px 15px;
+    color: white;
 }
 
-.section-contact__heading {
+/* .section-contact__heading {
     font-family: 'Cormorant Garamond', sans-serif;
     color: white;
     text-align: center;
-}
+} */
 
 .section-contact__input {
     width: 100%;
@@ -158,12 +229,12 @@ a {
 
 .section-contact__button {
     width: 100%;
+    background-color: black;
+    color: white;
 }
-
-
-
 
 .site-footer {
     background-color: black;
     text-align: center;
+    color: white;
 }
