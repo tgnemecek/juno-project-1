@@ -6,10 +6,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-/* ----------------------- */
-/* Colors:
--light-green: #C3D3CB / 195, 211, 203
--dark-green: #152D20 / 21, 45, 32 */
+/* -----------------------
+Colors:
+>light-green: #C3D3CB / 195, 211, 203
+>dark-green: #152D20 / 21, 45, 32
+Media Queries:
+>Base, padding 80px
+>940, padding 40px
+>768, padding 40px
+>540, padding 15px */
 
 html {
     font-size: 125%;
@@ -25,68 +30,23 @@ html {
     margin: 0 auto;
     background-color: #152D20;
 }
-/* 
-.h1 {
-    font-family: 'Fredericka the Great', serif;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-}
-
-.h2 {
-    font-family: 'Fredericka the Great', serif;
-    color: white;
-    font-size: 51px;
-}
-
-.h3 {
-    font-family: 'Fredericka the Great', serif;
-    color: #152D20;
-    font-size: 49px;
-}
-
-.h4 {
-    font-family: 'Fredericka the Great', serif;
-    color: #152D20;
-    font-size: 35px;
-}
-
-.h5 {
-    font-family: 'Cormorant Garamond', serif;
-    color: white;
-    text-align: center;
-}
-
-.a {
-    font-family: 'Cormorant Garamond', serif;
-    color: white;
-    text-decoration: none;
-} */
 
 .button {
     background-color: white;
     color: #152D20;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 0.7rem;
     text-align: center;
-    line-height: 29px;
+    line-height: 0.7rem;
     border: none;
-    padding: 5px 15px;
+    padding: 15px 20px;
     /* MAKE IT SEMIBOLD! */
 }
 
 .button--secondary {
     background-color: #152D20;
     color: white;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    text-align: center;
-    line-height: 29px;
-    border: none;
 }
-
-
-/* -------- */
 
 .site-header {
     width: 100%;
@@ -98,7 +58,24 @@ html {
     z-index: 1;
 }
 
+.section {
+    padding: 40px 80px;
+}
+
+@media only screen and (max-width: 940px) {
+    .section {
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .section {
+        padding: 15px;
+    }
+}
+
 .section-hero {
+    padding: 0;
     background-color: #152D20;
     position: relative;
 }
@@ -143,8 +120,13 @@ html {
     }
 }
 
+@media only screen and (max-width: 540px) {
+    .section-hero {
+        padding: 15px;
+    }
+}
+
 .section-featured {
-    padding: 30px 15px;
     color: white;
 }
 
@@ -156,10 +138,7 @@ html {
 }
 
 .section-featured__image {
-    width: 40%;
     max-height: 250px;
-    object-fit: contain;
-    margin-bottom: 50px;
     float: left;
 }
 
@@ -182,10 +161,14 @@ html {
     margin-top: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 540px) {
+    .section-featured {
+        padding: 30px 15px;
+    }
     .section-featured__image {
         clear: both;
         width: 100%;
+        object-fit: contain;
     }
     .section-featured__information {
         width: 100%;
@@ -199,8 +182,8 @@ html {
 
 
 .section-gallery {
-    padding: 30px 15px;
     background-color: #C3D3CB;
+    padding: 80px 40px;
 }
 
 .section-gallery__heading {
@@ -213,19 +196,38 @@ html {
 
 .section-gallery__image {
     max-width: calc(100% / 3);
+    padding: 0 40px;
     float: left;
 }
 
-@media only screen and (max-width: 600px) {
-    .section-gallery__image {
-        max-width: 45%;
-        padding-right: 5px;
+
+@media only screen and (max-width: 940px) {
+    .section-gallery {
+        padding: 40px 20px;
     }
-    .section-gallery__image--right {
+    .section-gallery__image {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-gallery__image {
+        max-width: 50%;
+    }
+    .section-gallery__image--second {
         float: right;
     }
     .section-gallery__image--last {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .section-gallery__image {
+        padding: 0 7.5px;
+    }
+    .section-gallery {
+        padding: 15px 7.5px;
     }
 }
 
@@ -251,7 +253,7 @@ html {
 }
 
 .section-links__text {
-    width: 100px;
+    width: 120px;
     margin: auto;
 }
 
@@ -261,7 +263,7 @@ html {
     margin: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 540px) {
     .section-links__link {
         clear: both;
         width: 100%;
@@ -270,19 +272,21 @@ html {
 
 .section-articles {
     text-align: center;
+    padding: 0;
 }
 
 .section-articles__article {
     background: white;
-    padding: 30px 15px;
+    padding: 40px 80px 20px 80px;
+    height: 450px;
     float: right;
     width: 50%;
-    height: 350px;
     text-align: left;
 }
 
 .section-articles__heading {
     font-family: 'Fredericka the Great', serif;
+    font-size: 1.5rem;
     color: #152D20;
     margin-bottom: 25px;
 }
@@ -291,11 +295,13 @@ html {
     color: black;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 200;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
 }
 
 .section-articles__image {
     width: 50%;
-    height: 350px;
+    height: 450px;
     object-fit: cover;
     float: right;
 }
@@ -309,14 +315,49 @@ html {
     float: left;
 }
 
-@media only screen and (max-width: 600px) {
-    .section-articles__article,
+@media only screen and (max-width: 940px) {
+    .section-articles {
+        padding: 0;
+    }
+    .section-articles__article {
+        padding: 30px 40px 20px 40px;
+        height: 350px;
+    }
+    .section-articles__heading {
+        font-size: 1.3rem;
+    }
     .section-articles__image {
+        height: 350px;
+    }
+    .section-articles__description {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-articles__article {
+        height: 400px;
+    }
+    .section-articles__heading {
+        font-size: 1.1rem;
+    }
+    .section-articles__image {
+        height: 400px;
+    }
+    .section-articles__description {
+        line-height: 1rem;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .section-articles__article {
+        padding: 15px;
+        height: auto;
         width: 100%;
         text-align: center;
         clear: both;
     }
     .section-articles__image {
+        width: 100%;
         height: 200px;
         object-fit: cover;
     }
@@ -324,13 +365,9 @@ html {
         display: block;
         margin: 25px auto 0 auto;
     }
-    .section-articles__description {
-        padding: 0 15px;
-    }
 }
 
 .section-contact {
-    padding: 30px 5%;
     color: white;
     text-align: left;
 }
@@ -419,7 +456,7 @@ html {
 
 .site-footer {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 100;
     padding: 15px;
     background-color: black;
