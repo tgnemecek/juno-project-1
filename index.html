@@ -10,8 +10,14 @@
     <title>Juno Project 1</title>
 </head>
 <body>
+    <a href="#maincontent" class="skip-link">
+        Skip to main content.
+    </a>
     <div class="page-content">
         <header class="site-header">
+            <button class="site-header__button">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav class="wrapper site-header__navigation">
                 <a class="site-header__link" href="">HOME</a>
                 <a class="site-header__link" href="">ABOUT</a>
@@ -19,7 +25,7 @@
                 <a class="site-header__link" href="">CONTACT</a>
             </nav>
         </header>
-        <main>
+        <main id="maincontent">
         <section class="section-hero">
             <div class="wrapper">
                 <div class="section-hero__heading">
@@ -27,7 +33,9 @@
                     <h1>REFUGE</h1>
                 </div>
             </div>
-            <img class="section-hero__image" src="assets/image-1.jpg" alt="Tiger">
+            <div class="outer-wrapper">
+                <img class="section-hero__image" src="assets/image-1.jpg" alt="Tiger">
+            </div>
             <div class="wrapper">
                 <nav class="section-hero__nav">
                     <a class="a section-hero__link" href="/">
@@ -100,6 +108,9 @@
         <section class="section-articles">
             <ul>
                 <li class="section-articles__item">
+                    <div class="outer-wrapper">
+                        <img class="section-articles__image" src="assets/image-7.jpg" alt="Zebras">
+                    </div>
                     <div class="wrapper section-articles__article">
                         <div class="section-articles__limit">
                             <h4 class="section-articles__heading">
@@ -113,9 +124,11 @@
                             <button class="button button--secondary section-articles__button">READ MORE</button>
                         </div>
                     </div>
-                    <img class="section-articles__image" src="assets/image-7.jpg" alt="Zebras">
                 </li>
                 <li class="section-articles__item">
+                    <div class="outer-wrapper">
+                        <img class="section-articles__image section-articles__image--inverted" src="assets/image-2.jpg" alt="Cat">
+                    </div>
                     <div class="wrapper section-articles__article">
                         <div class="section-articles__limit section-articles__limit--inverted">
                             <h4 class="section-articles__heading">
@@ -130,12 +143,11 @@
                             <button class="button button--secondary section-articles__button">READ MORE</button>
                         </div>
                     </div>
-                    <img class="section-articles__image section-articles__image--inverted" src="assets/image-2.jpg" alt="Cat">
                 </li>
             </ul>
         </section>
         <section class="wrapper section-contact clearfix">
-                <nav class="section-contact__nav">
+                <nav class="section-contact__nav clearfix">
                     <a class="section-contact__link" href="">HOME</a>
                     <a class="section-contact__link" href="">ABOUT</a>
                     <a class="section-contact__link" href="">BLOG</a>
