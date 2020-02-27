@@ -20,50 +20,61 @@
             </nav>
         </header>
         <main>
-        <section class="section section-hero">
-            <img class="section-hero__image" src="assets/image-1.jpg" alt="Tiger">
-            <div class="section-hero__heading">
-            <h1>ANIMAL</h1><h1>REFUGE</h1>
+        <section class="section-hero">
+            <div class="wrapper">
+                <div class="section-hero__heading">
+                    <h1>ANIMAL</h1>
+                    <h1>REFUGE</h1>
+                </div>
             </div>
-
-            <nav class="section-hero__nav">
-                <a class="a section-hero__link" href="/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="a section-hero__link" href="">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="a section-hero__link" href="">
-                    <i class="fab fa-snapchat-ghost"></i>
-                </a>
-                <a class="a section-hero__link" href="">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </nav>
+            <img class="section-hero__image" src="assets/image-1.jpg" alt="Tiger">
+            <div class="wrapper">
+                <nav class="section-hero__nav">
+                    <a class="a section-hero__link" href="/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="a section-hero__link" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="a section-hero__link" href="">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                    <a class="a section-hero__link" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </nav>
+            </div>
         </section>
-        <section class="section section-featured clearfix">
+        <section class="wrapper section-featured clearfix">
             <img class="section-featured__image" src="assets/image-6.jpg" alt="Cat">
-            <div class="section-featured__information">
-                <h2 class="section-featured__heading">SUZIE'S STORY</h2>
-                <p class="section-featured__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="section-featured__article">
+                <h2 class="section-featured__heading">
+                    SUZIE'S STORY
+                </h2>
+                <div class="section-featured__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
                 <button class="button section-featured__button">READ MORE</button>
             </div>
         </section>
-        <section class="section section-gallery clearfix">
+        <section class="section-gallery clearfix">
             <h3 class="section-gallery__heading">
                 SOME OF OUR FRIENDS
             </h3>
+            <div class="wrapper">
                 <img class="section-gallery__image" src="assets/image-5.jpg" alt="Chameleon">
                 <img class="section-gallery__image section-gallery__image--second" src="assets/image-4.jpg" alt="Sheep">
                 <img class="section-gallery__image section-gallery__image--last" src="assets/image-3.jpg" alt="Parrot">
+            </div>
         </section>
-        <section class="section section-links">
+        <section class="wrapper section-links">
             <nav class="section-links__nav clearfix">
                 <a class="section-links__link" href="">
                     <i class="fas fa-paw section-links__icon"></i>
@@ -85,35 +96,44 @@
                 </a>
             </nav>
         </section>
-        <section class="section section-articles">
+        <section class="section-articles">
             <ul>
-                <li class="clearfix">
+                <li class="section-articles__item clearfix">
+                    <div class="wrapper section-articles__article">
+                        <div class="section-articles__limit">
+                            <h4 class="section-articles__heading">
+                                FASCINATING FACTS ABOUT ZEBRAS
+                            </h4>
+                            <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore
+                                et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                            <button class="button button--secondary section-articles__button">READ MORE</button>
+                        </div>
+                    </div>
                     <img class="section-articles__image" src="assets/image-7.jpg" alt="Zebras">
-                    <div class="section-articles__article">
-                        <h4 class="section-articles__heading">FASCINATING FACTS ABOUT ZEBRAS</h4>
-                        <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.</p>
-                        <button class="button button--secondary section-articles__button">READ MORE</button>
-                    </div>
                 </li>
-                <li class="clearfix">
-                    <img class="section-articles__image section-articles__image--inverted" src="assets/image-2.jpg" alt="Cat">
-                    <div class="section-articles__article section-articles__article--inverted">
-                        <h4 class="section-articles__heading">THE BOND BETWEEN ANIMALS AND HUMANS</h4>
-                        <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore
-                            magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo
-                            consequat.</p>
-                        <button class="button button--secondary section-articles__button">READ MORE</button>
+                <li class="section-articles__item clearfix">
+                    <div class="wrapper section-articles__article">
+                        <div class="section-articles__limit section-articles__limit--inverted">
+                            <h4 class="section-articles__heading">
+                                THE BOND BETWEEN ANIMALS AND HUMANS
+                            </h4>
+                            <p class="section-articles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore
+                                et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                            <button class="button button--secondary section-articles__button">READ MORE</button>
+                        </div>
                     </div>
+                    <img class="section-articles__image section-articles__image--inverted" src="assets/image-2.jpg" alt="Cat">
                 </li>
             </ul>
         </section>
-        <section class="section section-contact clearfix">
+        <section class="wrapper section-contact clearfix">
                 <nav class="section-contact__nav">
                     <a class="section-contact__link" href="">HOME</a>
                     <a class="section-contact__link" href="">ABOUT</a>
