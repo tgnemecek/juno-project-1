@@ -40,6 +40,7 @@ html {
     line-height: 0.7rem;
     border: none;
     padding: 15px 20px;
+    min-height: 45px;
     /* MAKE IT SEMIBOLD! */
 }
 
@@ -140,7 +141,7 @@ html {
     font-weight: 400;
     color: white;
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .section-featured__image {
@@ -236,7 +237,7 @@ html {
     color: #152D20;
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 .section-gallery__image {
@@ -327,11 +328,11 @@ html {
 .section-articles__article {
     height: 450px;
     text-align: left;
-    padding-top: 40px;
 }
 
 .section-articles__limit {
     width: 50%;
+    padding: 40px 40px 40px 0;
 }
 
 .section-articles__limit--inverted {
@@ -430,7 +431,7 @@ html {
 } */
 
 .section-contact {
-    padding: 40px 0;
+    padding: 80px 0;
     color: white;
     text-align: left;
 }
@@ -468,20 +469,24 @@ html {
 }
 
 .section-contact__input {
-    width: 100%;
-    margin: 15px 0 5px 0;
-    padding: 5px;
+    width: calc(100% - 100px);
+    float: left;
+    height: 45px;
+    /* margin: 15px 0 5px 0; */
+    padding: 5px 0 5px 25px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 100;
     font-size: 0.7rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section-contact__button {
-    width: 100%;
+    width: 100px;
+    float: left;
+    height: 45px;
     background-color: black;
     color: white;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    /* font-family: 'Helvetica', 'Arial', sans-serif; */
     font-size: 0.7rem;
     font-weight: 400;
     line-height: 0.6rem;
@@ -493,7 +498,7 @@ html {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 0.7rem;
     font-weight: 100;
-    line-height: 1rem;
+    margin-bottom: 15px;
 }
 
 /* @media only screen and (max-width: 600px) {
