@@ -13,6 +13,8 @@ Colors:
     darker-green: #0b1710
 ----------------------- */
 
+/* ---Main layout--- */
+
 html {
     font-size: 125%;
     font-family: 'Cormorant Garamond', serif;
@@ -21,7 +23,7 @@ html {
     background-color: white;
 }
 
-/* This is used to fix fonts looking bolder on firefox (macOS) */
+/* This is used to fix fonts looking bolder on Firefox (macOS) */
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,7 +46,6 @@ body {
 size of the images that go beyond the wrapper */
 .page-content {
     width: 100%;
-    /* max-width: 2000px; */
     overflow-x: hidden;
     margin: 0 auto;
     background-color: #152D20;
@@ -62,6 +63,8 @@ size of the images that go beyond the wrapper */
     margin: 0 auto;
     position: relative;
 }
+
+/* ---Main reusable blocks--- */
 
 .button {
     background-color: white;
@@ -92,6 +95,12 @@ size of the images that go beyond the wrapper */
     color: #152D20;
 }
 
+.p {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
 .site-header {
     width: 100%;
     position: absolute;
@@ -115,8 +124,6 @@ size of the images that go beyond the wrapper */
     left: -15px; /* Aligns the menu with the wrapper */
     transition: opacity 0.5s;
     display: block;
-        white-space: nowrap;
-    /* display: inline-block; */
 }
 
 .site-header:hover .site-header__navigation {
@@ -137,7 +144,6 @@ size of the images that go beyond the wrapper */
     font-weight: 600;
     padding: 40px 15px;
     display: inline-block;
-        white-space: nowrap;
     transition: background-color 0.5s;
 }
 
@@ -176,21 +182,8 @@ size of the images that go beyond the wrapper */
         background-color: rgba(0, 0, 0, 0.6);
     }
 }
-/* .section {
-    padding: 40px 80px;
-}
 
-@media only screen and (max-width: 940px) {
-    .section {
-        padding: 40px;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .section {
-        padding: 15px;
-    }
-} */
+/* ---Sections--- */
 
 .section-hero {
     background-color: #152D20;
@@ -246,22 +239,6 @@ size of the images that go beyond the wrapper */
     }
 }
 
-/* @media only screen and (max-width: 600px) {
-    .section-hero__heading {
-        font-size: 1.1rem;
-    }
-    .section-hero__heading {
-        top: 0;
-        left: 0;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .section-hero {
-        padding: 15px;
-    }
-} */
-
 .section-featured {
     padding: 80px 0;
 }
@@ -289,11 +266,7 @@ size of the images that go beyond the wrapper */
     padding-left: 25px;
 }
 
-.section-featured__text {
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 100;
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+.section-featured__p {
     margin-bottom: 50px;
 }
 
@@ -332,65 +305,9 @@ size of the images that go beyond the wrapper */
     }
 }
 
-/* .section-featured {
-    color: white;
-}
-
-.section-featured__information {
-    width: 60%;
-    float: left;
-    min-height: 250px;
-    padding-left: 25px;
-}
-
-.section-featured__image {
-    max-height: 250px;
-    float: left;
-}
-
-.section-featured__heading {
-    font-family: 'Fredericka the Great', serif;
-    font-weight: 400;
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.section-featured__paragraph {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-weight: 100;
-    font-size: 0.7rem;
-    line-height: 1.1rem;
-}
-
-.section-featured__button {
-    margin-top: 25px;
-}
-
-@media only screen and (max-width: 540px) {
-    .section-featured {
-        padding: 30px 15px;
-    }
-    .section-featured__image {
-        clear: both;
-        width: 100%;
-        object-fit: contain;
-    }
-    .section-featured__information {
-        width: 100%;
-        padding: 0;
-    }
-    .section-featured__button {
-        display: block;
-        margin: 25px auto 0 auto;
-    }
-} */
-
-
 .section-gallery {
     padding: 80px 0;
     background-color: #C3D3CB;
-    /* padding: 80px 40px; */
 }
 
 .section-gallery__heading {
@@ -440,37 +357,6 @@ size of the images that go beyond the wrapper */
         overflow: hidden;
     }
 }
-
-
-/* @media only screen and (max-width: 940px) {
-    .section-gallery {
-        padding: 40px 20px;
-    }
-    .section-gallery__image {
-        padding: 0 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .section-gallery__image {
-        max-width: 50%;
-    }
-    .section-gallery__image--second {
-        float: right;
-    }
-    .section-gallery__image--third {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .section-gallery__image {
-        padding: 0 7.5px;
-    }
-    .section-gallery {
-        padding: 15px 7.5px;
-    }
-} */
 
 .section-links {
     padding: 40px 0;
@@ -555,12 +441,8 @@ size of the images that go beyond the wrapper */
     margin-bottom: 10px;
 }
 
-.section-articles__description {
+.section-articles__p {
     color: black;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 200;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
 }
 
 .section-articles__image {
@@ -670,12 +552,10 @@ size of the images that go beyond the wrapper */
     float: left;
     height: 45px;
     margin-bottom: 10px;
-    /* margin: 15px 0 5px 0; */
     padding: 5px 0 5px 25px;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 100;
     font-size: 0.7rem;
-    /* text-align: center; */
 }
 
 .section-contact__button {
@@ -684,7 +564,6 @@ size of the images that go beyond the wrapper */
     height: 45px;
     background-color: black;
     color: white;
-    /* font-family: 'Helvetica', 'Arial', sans-serif; */
     font-size: 0.7rem;
     line-height: 0.6rem;
     padding: 10px 0 8px 0;
@@ -692,9 +571,8 @@ size of the images that go beyond the wrapper */
 }
 
 .section-contact__p {
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-size: 0.75rem;
-    font-weight: 400;
+    line-height: 0.9rem;;
     margin-bottom: 6px;
 }
 
@@ -751,6 +629,8 @@ size of the images that go beyond the wrapper */
         padding-left: 0;
     }
 }
+
+/* ---Site Footer--- */
 
 .site-footer {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
