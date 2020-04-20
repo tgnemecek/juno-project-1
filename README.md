@@ -23,5 +23,3 @@ CSS written following BEM naming convention.
 -   Google web fonts are used
 -   Project represents the provided design well
 -   Files, folders, & naming conventions followed (kabob-case) (this includes your project repo)
-
-Project Source [Here](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
