@@ -1,4 +1,4 @@
-# Project 1 - Web Development Bootcamp
+# Animal Refuge
 
 ![Project-1 Screenshot](/readme-image.png)
 
